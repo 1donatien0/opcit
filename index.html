@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opcit – Mes tâches</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="carte">
+    <h1>📝 Mes tâches</h1>
+
+    <form id="formulaire">
+      <input id="saisie" type="text" placeholder="Ajouter une tâche..." autocomplete="off" required>
+      <button type="submit">Ajouter</button>
+    </form>
+
+    <div class="filtres">
+      <button data-filtre="toutes" class="actif">Toutes</button>
+      <button data-filtre="actives">À faire</button>
+      <button data-filtre="terminees">Terminées</button>
+    </div>
+
+    <ul id="liste"></ul>
+
+    <footer>
+      <span id="compteur">0 tâche restante</span>
+      <button id="effacer">Effacer les terminées</button>
+    </footer>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
