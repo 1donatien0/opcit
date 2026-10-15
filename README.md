@@ -1,6 +1,6 @@
 # Opcit – Liste de tâches
 
-Une petite application web de liste de tâches, écrite en HTML, CSS et JavaScript, sans aucune dépendance.
+Une petite application web de liste de tâches, écrite en HTML, CSS et JavaScript, sans aucune dépendance. Bien.
 
 ## Fonctionnalités
 
