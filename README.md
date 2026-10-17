@@ -32,7 +32,11 @@ opcit/
 Dans le dépôt GitHub : **Settings → Pages → Branch : `main` / root → Save**.
 Le site sera disponible à l'adresse `https://<ton-pseudo>.github.io/opcit/`.
 
+## Contributeurs
+
+- 1donatien0
+- Nolan
+
 ## Licence
 
 MIT
-test pair
