@@ -5,8 +5,8 @@ body {
   background: linear-gradient(135deg, #4f46e5, #06b6d4);
   min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   padding: 60px 16px;
   color: #1f2937;
 }
@@ -88,3 +88,10 @@ footer {
   color: #6b7280;
 }
 footer button { background: none; color: #6b7280; text-decoration: underline; }
+
+.credits {
+  margin-top: 24px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.85rem;
+  text-align: center;
+}
