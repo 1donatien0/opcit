@@ -90,7 +90,7 @@ footer {
 footer button { background: none; color: #6b7280; text-decoration: underline; }
 
 .credits {
-  margin-top: 24px;
+  margin: 24px 0;
   color: rgba(255, 255, 255, 0.85);
   font-size: 0.85rem;
   text-align: center;
