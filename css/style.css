@@ -5,8 +5,8 @@ body {
   background: linear-gradient(135deg, #4f46e5, #06b6d4);
   min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   padding: 60px 16px;
   color: #1f2937;
 }
@@ -64,7 +64,8 @@ li {
   padding: 10px 4px;
   border-bottom: 1px solid #f3f4f6;
 }
-li span { flex: 1; word-break: break-word; }
+li span { flex: 1; word-break: break-word; cursor: text; }
+li input.edition { flex: 1; padding: 4px 8px; font-size: 1rem; }
 li.terminee span { text-decoration: line-through; color: #9ca3af; }
 li input[type="checkbox"] { width: 18px; height: 18px; accent-color: #4f46e5; }
 
@@ -88,3 +89,10 @@ footer {
   color: #6b7280;
 }
 footer button { background: none; color: #6b7280; text-decoration: underline; }
+
+.credits {
+  margin: 24px 0;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.85rem;
+  text-align: center;
+}
