@@ -56,7 +56,10 @@ function afficher() {
   const visibles = tachesFiltrees();
 
   if (visibles.length === 0) {
-    liste.innerHTML = '<li class="vide">Aucune tâche ici 🎉</li>';
+    const vide = document.createElement("li");
+    vide.className = "vide";
+    vide.textContent = messageListeVide(filtre);
+    liste.appendChild(vide);
   }
 
   for (const tache of visibles) {
@@ -82,7 +85,7 @@ function afficher() {
   }
 
   const restantes = taches.filter((t) => !t.terminee).length;
-  compteur.textContent = `${restantes} tâche${restantes > 1 ? "s" : ""} restante${restantes > 1 ? "s" : ""}`;
+  compteur.textContent = texteCompteur(restantes);
 }
 
 function mettreAJour() {
