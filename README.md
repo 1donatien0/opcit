@@ -40,5 +40,7 @@ Le site sera disponible à l'adresse `https://<ton-pseudo>.github.io/opcit/`.
 
 ## Licence
 
-MIT
+GNU General Public License v3.0 (GPL-3.0). Voir le fichier `LICENSE`.
 test
+
+Apprentissage personnel GitHub.
