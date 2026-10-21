@@ -64,7 +64,8 @@ li {
   padding: 10px 4px;
   border-bottom: 1px solid #f3f4f6;
 }
-li span { flex: 1; word-break: break-word; }
+li span { flex: 1; word-break: break-word; cursor: text; }
+li input.edition { flex: 1; padding: 4px 8px; font-size: 1rem; }
 li.terminee span { text-decoration: line-through; color: #9ca3af; }
 li input[type="checkbox"] { width: 18px; height: 18px; accent-color: #4f46e5; }
 
