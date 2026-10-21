@@ -1,10 +1,10 @@
 # Opcit – Liste de tâches
 
 Une petite application web de liste de tâches, écrite en HTML, CSS et JavaScript, sans aucune dépendance. Apprentissage personnel des fonctionnalités sur GitHub.
-.n
+
 ## Fonctionnalités
 
-- Ajouter, cocher et supprimer des tâches
+- Ajouter, cocher, modifier et supprimer des tâches
 - Filtrer : toutes / à faire / terminées
 - Effacer toutes les tâches terminées
 - Sauvegarde automatique dans le navigateur (localStorage)
@@ -21,6 +21,7 @@ opcit/
 ├── css/
 │   └── style.css
 ├── js/
+│   ├── messages.js
 │   └── app.js
 ├── README.md
 ├── LICENSE

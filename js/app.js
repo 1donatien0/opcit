@@ -45,6 +45,39 @@ function supprimer(id) {
   mettreAJour();
 }
 
+function renommer(id, texte) {
+  const tache = taches.find((t) => t.id === id);
+  const propre = texte.trim();
+  if (tache && propre) tache.texte = propre;
+  mettreAJour();
+}
+
+function commencerEdition(tache, span) {
+  const champ = document.createElement("input");
+  champ.type = "text";
+  champ.value = tache.texte;
+  champ.className = "edition";
+  span.replaceWith(champ);
+  champ.focus();
+
+  let termine = false;
+  const finir = (enregistrer) => {
+    if (termine) return;
+    termine = true;
+    if (enregistrer) renommer(tache.id, champ.value);
+    else afficher();
+  };
+
+  champ.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      finir(true);
+    }
+    if (e.key === "Escape") finir(false);
+  });
+  champ.addEventListener("blur", () => finir(true));
+}
+
 function tachesFiltrees() {
   if (filtre === "actives") return taches.filter((t) => !t.terminee);
   if (filtre === "terminees") return taches.filter((t) => t.terminee);
@@ -73,6 +106,8 @@ function afficher() {
 
     const texte = document.createElement("span");
     texte.textContent = tache.texte;
+    texte.title = "Double-clic pour modifier";
+    texte.addEventListener("dblclick", () => commencerEdition(tache, texte));
 
     const btn = document.createElement("button");
     btn.className = "supprimer";
