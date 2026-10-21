@@ -10,6 +10,7 @@ function messageListeVide(filtre) {
 }
 
 function texteCompteur(restantes) {
+  if (restantes === 0) return "Tout est fait";
   const pluriel = restantes > 1 ? "s" : "";
   return `${restantes} tâche${pluriel} restante${pluriel}`;
 }
