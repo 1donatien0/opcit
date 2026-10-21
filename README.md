@@ -34,8 +34,7 @@ Le site sera disponible à l'adresse `https://<ton-pseudo>.github.io/opcit/`.
 
 ## Contributeurs
 
-- 1donatien0
-- Nolan
+- Nolan 1donatien0
 - Shikazawa
 
 ## Licence
