@@ -1,7 +1,7 @@
 # Opcit – Liste de tâches
 
 Une petite application web de liste de tâches, écrite en HTML, CSS et JavaScript, sans aucune dépendance. Apprentissage personnel des fonctionnalités sur GitHub.
-.n
+
 ## Fonctionnalités
 
 - Ajouter, cocher et supprimer des tâches
@@ -39,5 +39,4 @@ Le site sera disponible à l'adresse `https://<ton-pseudo>.github.io/opcit/`.
 
 ## Licence
 
-MIT
-test
+GNU General Public License v3.0 (GPL-3.0). Voir le fichier `LICENSE`.
