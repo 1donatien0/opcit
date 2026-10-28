@@ -64,15 +64,25 @@ li {
   padding: 10px 4px;
   border-bottom: 1px solid #f3f4f6;
 }
-li span { flex: 1; word-break: break-word; }
+li span { flex: 1; word-break: break-word; cursor: text; }
+li input.edition { flex: 1; padding: 4px 8px; font-size: 1rem; }
 li.terminee span { text-decoration: line-through; color: #9ca3af; }
 li input[type="checkbox"] { width: 18px; height: 18px; accent-color: #4f46e5; }
 
+li .modifier,
 li .supprimer {
   background: none;
+  flex-shrink: 0;
+  padding: 2px 4px;
+}
+li .modifier {
+  color: #4f46e5;
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+li .supprimer {
   color: #ef4444;
   font-size: 1.1rem;
-  padding: 2px 6px;
   opacity: 0.6;
 }
 li .supprimer:hover { opacity: 1; }
@@ -83,14 +93,28 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
   margin-top: 16px;
   font-size: 0.85rem;
   color: #6b7280;
 }
+.actions-pied {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  justify-content: flex-end;
+}
 footer button { background: none; color: #6b7280; text-decoration: underline; }
+#annuler { color: #4f46e5; font-weight: 600; }
+footer button:disabled {
+  opacity: 0.4;
+  cursor: default;
+  text-decoration: none;
+}
 
 .credits {
-  margin-top: 24px;
+  margin: 24px 0;
   color: rgba(255, 255, 255, 0.85);
   font-size: 0.85rem;
   text-align: center;
